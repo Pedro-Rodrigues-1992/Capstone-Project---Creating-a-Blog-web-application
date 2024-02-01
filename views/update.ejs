@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/styles/main.css">
+
+<%- include ("partials/header.ejs") %>
+
+    <a href="/" class="homepage">Homepage</a>
+
+    <h2>Update Post</h2>
+    <form action="/update/<%= post.title %>" method="POST" class="formPost">
+        <input type="text" name="postTitle" class="postTitle" value="<%= post.title %>" placeholder="Enter updated title">
+        <textarea name="postContent" class="postContent" placeholder="Enter updated content"><%= post.content %></textarea>
+        <button type="submit" class="Newupdate">Update</button>
+    </form>
+
+<%- include ("partials/footer.ejs") %>

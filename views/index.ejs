@@ -1,0 +1,27 @@
+<%- include ("partials/header.ejs") %>
+    
+<body class="container">
+        <h2>Blog Posts</h2>
+        <div class="PostList">
+            <a class="new-post" href="/newPost">Create a new Post</a>
+
+            <% if (Posts && Posts.length > 0) { %>
+                <ul>
+                    <% for (let i = 0; i < Posts.length; i++) { %>
+                        <li>
+                        <a class="topic" href="/<%= encodeURIComponent(Posts[i].title) %>"><%= Posts[i].title %></a>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } else { %>
+                <img src="images/maintenance.png" class ="under-constr" alt="Under Construction">
+            <% } %>
+            
+        </div>
+    </body>
+
+
+
+
+<%- include ("partials/footer.ejs") %>
+

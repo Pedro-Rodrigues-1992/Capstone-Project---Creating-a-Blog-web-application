@@ -1,0 +1,17 @@
+<%- include ("partials/header.ejs") %>
+
+<% if (error) { %>
+  <script>
+      alert("<%= error %>");
+  </script>
+<% } %>
+
+<h2>Create a new Post</h2>
+<form action="/newPost" method="POST" class="formPost">
+    <input type="text" name="postTitle" class="postTitle" placeholder="Enter post title">
+    <textarea name="postContent" class="postContent" placeholder="Enter post"></textarea>
+    <button type="submit" class="Newupdate">Create</button>
+</form>
+
+<%- include ("partials/footer.ejs") %>
+

@@ -1,0 +1,253 @@
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p{
+    color: #fff;
+}
+
+/*Body styles here */
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    display: flexbox;
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    display: flexbox;
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.under-constr{
+    width: 720px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notFound{
+    width: 720px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: justify; 
+}
+
+.content p {
+    white-space: pre-line;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    padding-bottom: 150px;
+}
+
+
+body {
+    position: relative;
+}
+
+.homepage {
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.delete {
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #3b2626;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.update {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flexbox;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.PostList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    max-width: 75%;
+    margin: auto;
+    color: black;
+}
+
+.PostList ul {
+    list-style-position: inside;
+    padding-left: 0; 
+}
+
+.PostList ul li {
+    list-style-type: disc;
+    text-align: left; 
+}
+
+.new-post {
+    padding: 15px;
+    background-color: #333;
+    display: inline-block; 
+    text-decoration: none; 
+    color: white; 
+}
+
+.topic{
+    padding: 5px;
+    display: inline-block; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.formPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.postTitle {
+    width: 70%; 
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.postContent {
+    width: 70%; 
+    min-height: 50vh; 
+    resize: vertical; 
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.Newupdate {
+    width: 70%;
+    color: white;
+    background-color: #333;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle; 
+    margin-right: 20px; 
+    margin-top: 30px;
+}
+
+.profiles {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block; 
+    line-height: normal; 
+    margin-top: 30px;
+}
+
+.about{
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: justify; 
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        max-width: 50%;
+    }
+
+    .sidebar {
+        display: block;
+        width: 25%;
+        float: right;
+        margin-top: 20px; 
+        margin-right: 20px; 
+        background-color: #f4f4f4; 
+        padding: 20px;
+        border-radius: 10px;
+    }
+}

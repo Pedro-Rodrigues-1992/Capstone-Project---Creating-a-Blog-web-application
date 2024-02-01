@@ -1,0 +1,21 @@
+<%- include ("partials/header.ejs") %>
+
+<a href="/" class="homepage">Homepage</a>
+
+<button type="button" class="delete" onclick="confirmDelete('<%= title %>')">Delete Post</button>
+
+<body class="container">
+    <div class="content">
+        <h2><%= title %></h2>
+        <p><%= content %></p>
+    </div>
+</body>
+
+
+
+
+<a href="/update/<%= title %>" class="update">Update</a>
+
+<%- include ("partials/footer.ejs") %>
+
+<script src="scripts/deleteConfirmation.js"></script>
